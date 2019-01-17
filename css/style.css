@@ -1,3 +1,5 @@
 body {
-  background-image: linear-gradient(to right, #fff, #000);
-}
+  background-image: linear-gradient(to right, #fff, #000); }
+
+.done {
+  text-decoration: line-through; }
