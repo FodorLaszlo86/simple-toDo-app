@@ -1,0 +1,30 @@
+{
+  "name": "simple-todo-app",
+  "version": "1.0.0",
+  "description": "a simple todo list app to practice JavaScript DOM manipulation. Background-gradient is possible to customize",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FodorLaszlo86/simple-toDo-app.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "sass",
+    "npm",
+    "DOM"
+  ],
+  "author": "Laszlo Fodor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FodorLaszlo86/simple-toDo-app/issues"
+  },
+  "homepage": "https://github.com/FodorLaszlo86/simple-toDo-app#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
