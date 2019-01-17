@@ -1,4 +1,4 @@
-const todoList = document.querySelector('.todo__list');
+const todoList = document.querySelector('.todo-list');
 const userInput = document.querySelector('.input__user');
 const inputBtn = document.querySelector('.input__btn');
 const col1 = document.querySelector('#color1');
