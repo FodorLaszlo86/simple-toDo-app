@@ -15,11 +15,11 @@ function getInputLength() {
 function createTodoNode() {
     // make new list item
     const newItem = `
-        <li class="todo__item">
-            <span class="todo__name">
+        <li class="todo-list__item">
+            <span class="todo-list__name">
                 ${ userInput.value }
             </span>
-            <button class="todo__delete">x</button>
+            <button class="todo-list__delete">x</button>
         </li>
     `
     todoList.insertAdjacentHTML('beforeend', newItem);
