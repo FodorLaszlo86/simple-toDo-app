@@ -43,20 +43,30 @@
     }
 
     .todo-list {
-        &__item {
 
+        list-style-type: none;
+        font-size: 1.8rem;
+
+        &__item {
+            height: 5rem;
+            display:flex;
+            align-items: stretch;
         }
 
-        &__link {
-
+        &__item:nth-child(2n) {
+            background-color: #fff;
         }
 
         &__name {
-
+            flex: 1;
+            height: 100%;
+            text-transform: capitalize;
+            padding: 1.5rem 0rem 1.5rem 2rem;
         }
 
         &__delete {
-
+            flex-basis: 10%;
+            height: 100%;
         }
     }
 }

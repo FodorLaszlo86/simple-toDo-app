@@ -26,7 +26,7 @@ body {
   transform: translateX(-50%);
   font-size: 4.5rem;
   font-weight: 300;
-  color: #000;
+  color: #fff;
   position: relative;
   display: inline-block;
   letter-spacing: .5rem; }
@@ -75,6 +75,23 @@ body {
       transform: scale(1.2); }
     .todo__container .input__user:focus, .todo__container .input__btn:focus {
       outline: none; }
+  .todo__container .todo-list {
+    list-style-type: none;
+    font-size: 1.8rem; }
+    .todo__container .todo-list__item {
+      height: 5rem;
+      display: flex;
+      align-items: stretch; }
+    .todo__container .todo-list__item:nth-child(2n) {
+      background-color: #fff; }
+    .todo__container .todo-list__name {
+      flex: 1;
+      height: 100%;
+      text-transform: capitalize;
+      padding: 1.5rem 0rem 1.5rem 2rem; }
+    .todo__container .todo-list__delete {
+      flex-basis: 10%;
+      height: 100%; }
 
 .done {
   text-decoration: line-through; }
