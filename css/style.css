@@ -21,6 +21,7 @@ body {
 .title {
   margin-top: 15vh;
   margin-left: 50%;
+  margin-bottom: 5vh;
   padding: .5rem;
   transform: translateX(-50%);
   font-size: 4.5rem;
@@ -43,5 +44,42 @@ body {
   border-radius: .3rem;
   box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.671); }
 
+.todo__container {
+  width: 40rem;
+  background-color: #eee;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: .3rem; }
+  .todo__container .input {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    font-size: 2rem;
+    overflow: hidden; }
+    .todo__container .input__user {
+      height: 100%;
+      flex-grow: 1;
+      border: none;
+      border-top-left-radius: .3rem; }
+    .todo__container .input__btn {
+      height: 100%;
+      flex-basis: 10%;
+      background-color: #fff;
+      border: none;
+      border-top-right-radius: .3rem;
+      padding: .5rem 1rem .5rem;
+      font-size: 4rem;
+      color: #258525;
+      transition: transform .2s ease-out; }
+    .todo__container .input__btn:hover {
+      transform: scale(1.2); }
+    .todo__container .input__user:focus, .todo__container .input__btn:focus {
+      outline: none; }
+
 .done {
   text-decoration: line-through; }
+
+input[type="text"] {
+  font-size: 2rem;
+  color: #258525;
+  padding: 1rem; }
