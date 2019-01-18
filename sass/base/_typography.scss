@@ -1,0 +1,14 @@
+body {
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 300;
+    background-image: linear-gradient(to right, #444,#fff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
