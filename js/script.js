@@ -19,7 +19,9 @@ function createTodoNode() {
             <span class="todo-list__name">
                 ${ userInput.value }
             </span>
-            <button class="todo-list__delete">x</button>
+            <button class="todo-list__delete">
+                <ion-icon name="trash"></ion-icon>
+            </button>
         </li>
     `
     todoList.insertAdjacentHTML('beforeend', newItem);
@@ -47,10 +49,16 @@ function handleListItems(e) {
     }
 
     // On button click item to be removed from list
-    else if( e.target && e.target.nodeName === 'BUTTON') {
+    else if( e.target && e.target.nodeName === 'ION-ICON') {
+        const item = e.target.parentElement.parentElement;
+        item.parentNode.removeChild(item);
+    }
+
+    else if(e.target && e.target.nodeName === 'BUTTON') {
         const item = e.target.parentElement;
         item.parentNode.removeChild(item);
     }
+
 }
 
 
