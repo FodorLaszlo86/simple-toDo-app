@@ -82,7 +82,8 @@ body {
       height: 5rem;
       display: flex;
       align-items: stretch;
-      cursor: pointer; }
+      cursor: pointer;
+      overflow: hidden; }
     .todo__container .todo-list__item:nth-child(1n) {
       background-color: #a7caca;
       color: #333; }
@@ -96,16 +97,16 @@ body {
       padding: 1.5rem 0rem 1.5rem 2rem; }
     .todo__container .todo-list__delete {
       height: 100%;
-      flex-basis: 10%;
+      padding: 0 1rem;
+      background-color: #258525;
       cursor: pointer;
       border: none;
       background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #f82c2c 50%, #f82c2c 100%);
       background-size: 225%;
       transition: all .5s;
-      display: inline-block; }
-      .todo__container .todo-list__delete ion-icon {
-        color: #fff;
-        font-size: 2.5rem; }
+      display: inline-block;
+      font-size: 2.5rem;
+      color: #fff; }
     .todo__container .todo-list__delete:hover {
       background-position: 100%; }
 
