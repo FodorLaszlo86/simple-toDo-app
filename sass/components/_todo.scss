@@ -51,10 +51,16 @@
             height: 5rem;
             display:flex;
             align-items: stretch;
+            cursor: pointer;
+        }
+
+
+        &__item:nth-child(1n) {
+            background-color: rgb(167, 202, 202);
         }
 
         &__item:nth-child(2n) {
-            background-color: #fff;
+            background-color: rgb(82, 156, 156);
         }
 
         &__name {
@@ -67,12 +73,27 @@
         &__delete {
             flex-basis: 10%;
             height: 100%;
+            border: none;
+            /*background-color: rgb(248, 44, 44);*/
+            background-image: linear-gradient(90deg,transparent 0%,transparent 50%, rgb(248, 44, 44) 50%, rgb(248, 44, 44) 100%);
+            background-size: 225%;
+            transition: all .5s;
+
+            ion-icon {
+                color: #fff;
+                font-size: 2.5rem;
+            }
+        }
+
+        &__delete:hover  {
+            background-position: 100%;
         }
     }
 }
 
 .done {
-    text-decoration: line-through;
+    background-color: rgb(248, 44, 44);
+    transition: all .4s;
 }
 
 input[type="text"] {

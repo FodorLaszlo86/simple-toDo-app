@@ -81,9 +81,12 @@ body {
     .todo__container .todo-list__item {
       height: 5rem;
       display: flex;
-      align-items: stretch; }
+      align-items: stretch;
+      cursor: pointer; }
+    .todo__container .todo-list__item:nth-child(1n) {
+      background-color: #a7caca; }
     .todo__container .todo-list__item:nth-child(2n) {
-      background-color: #fff; }
+      background-color: #529c9c; }
     .todo__container .todo-list__name {
       flex: 1;
       height: 100%;
@@ -91,10 +94,21 @@ body {
       padding: 1.5rem 0rem 1.5rem 2rem; }
     .todo__container .todo-list__delete {
       flex-basis: 10%;
-      height: 100%; }
+      height: 100%;
+      border: none;
+      /*background-color: rgb(248, 44, 44);*/
+      background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #f82c2c 50%, #f82c2c 100%);
+      background-size: 225%;
+      transition: all .5s; }
+      .todo__container .todo-list__delete ion-icon {
+        color: #fff;
+        font-size: 2.5rem; }
+    .todo__container .todo-list__delete:hover {
+      background-position: 100%; }
 
 .done {
-  text-decoration: line-through; }
+  background-color: #f82c2c;
+  transition: all .4s; }
 
 input[type="text"] {
   font-size: 2rem;
