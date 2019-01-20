@@ -53,7 +53,7 @@ body {
   top: 0;
   right: 0;
   height: 100%;
-  width: 10rem;
+  width: 8%;
   background-color: #eee;
   box-shadow: 0 0.5rem 1rem #111111ab;
   opacity: 0.8; }
@@ -62,6 +62,7 @@ body {
     text-align: center;
     font-size: 1.5rem;
     width: 100%;
+    padding: 0 .3rem;
     margin: 15vh auto 2rem; }
   .gradient__container input[type="color"] {
     width: 80%;
