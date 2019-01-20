@@ -46,13 +46,20 @@
 
         list-style-type: none;
         font-size: 1.8rem;
+        border-bottom-left-radius: .3rem;
+        border-bottom-right-radius: .3rem;
 
         &__item {
-            height: 5rem;
+            height: auto;
             display:flex;
             align-items: stretch;
             cursor: pointer;
             overflow: hidden;
+            transition: transform .2s ease-out;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid rgb(221, 220, 220);
+            }
         }
 
 
@@ -66,6 +73,17 @@
             color: #fff;
         }
 
+        &__item:hover {
+            transform: scaleX(1.03);
+            border: 1px solid rgb(81, 110, 192);
+            border-radius: .3rem;
+        }
+
+        &__item:last-child {
+            border-bottom-left-radius: .3rem;
+            border-bottom-right-radius: .3rem;
+        }
+
         &__name {
             flex: 1;
             height: 100%;
@@ -74,7 +92,7 @@
         }
 
         &__delete {
-            height: 100%;
+            height: auto;
             padding: 0 1rem;
             background-color: #258525;
             cursor: pointer;

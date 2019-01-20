@@ -77,26 +77,38 @@ body {
       outline: none; }
   .todo__container .todo-list {
     list-style-type: none;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem; }
     .todo__container .todo-list__item {
-      height: 5rem;
+      height: auto;
       display: flex;
       align-items: stretch;
       cursor: pointer;
-      overflow: hidden; }
+      overflow: hidden;
+      transition: transform .2s ease-out; }
+      .todo__container .todo-list__item:not(:last-child) {
+        border-bottom: 1px solid #dddcdc; }
     .todo__container .todo-list__item:nth-child(1n) {
       background-color: #a7caca;
       color: #333; }
     .todo__container .todo-list__item:nth-child(2n) {
       background-color: #529c9c;
       color: #fff; }
+    .todo__container .todo-list__item:hover {
+      transform: scaleX(1.03);
+      border: 1px solid #516ec0;
+      border-radius: .3rem; }
+    .todo__container .todo-list__item:last-child {
+      border-bottom-left-radius: .3rem;
+      border-bottom-right-radius: .3rem; }
     .todo__container .todo-list__name {
       flex: 1;
       height: 100%;
       text-transform: capitalize;
       padding: 1.5rem 0rem 1.5rem 2rem; }
     .todo__container .todo-list__delete {
-      height: 100%;
+      height: auto;
       padding: 0 1rem;
       background-color: #258525;
       cursor: pointer;
