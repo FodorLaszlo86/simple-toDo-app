@@ -23,7 +23,7 @@ body {
 
 /* APP TITLE */
 .title {
-  margin: 15vh auto 5vh 50%;
+  margin: 15vh auto 5vh 46%;
   padding: .5rem;
   transform: translateX(-50%);
   font-size: 4.5rem;
@@ -74,7 +74,7 @@ body {
 .todo__container {
   width: 40rem;
   background-color: #eee;
-  margin-left: 50%;
+  margin-left: 46%;
   transform: translateX(-50%);
   border-radius: .3rem;
   box-shadow: 0 0.5rem 1rem #111111ab; }
