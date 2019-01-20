@@ -46,6 +46,30 @@ body {
   border-radius: .3rem;
   box-shadow: 0 0.5rem 1rem #111111ab; }
 
+.gradient__container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 10rem;
+  background-color: #eee;
+  box-shadow: 0 0.5rem 1rem #111111ab;
+  opacity: 0.8; }
+  .gradient__container .gradient__header {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 15vh auto 2rem; }
+  .gradient__container input[type="color"] {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1rem; }
+  .gradient__container .colorInp-label {
+    padding: 0.8rem 0.5rem; }
+
 .todo__container {
   width: 40rem;
   background-color: #eee;
