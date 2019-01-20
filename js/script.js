@@ -15,11 +15,11 @@ function getInputLength() {
 function createTodoNode() {
     // make new list item
     const newItem = `
-        <li class="todo__item">
-            <span class="todo__name">
+        <li class="todo-list__item">
+            <span class="todo-list__name">
                 ${ userInput.value }
             </span>
-            <button class="todo__delete">x</button>
+            <ion-icon class="todo-list__delete" name="trash"></ion-icon>
         </li>
     `
     todoList.insertAdjacentHTML('beforeend', newItem);
@@ -47,7 +47,7 @@ function handleListItems(e) {
     }
 
     // On button click item to be removed from list
-    else if( e.target && e.target.nodeName === 'BUTTON') {
+    else if( e.target && e.target.nodeName === 'ION-ICON') {
         const item = e.target.parentElement;
         item.parentNode.removeChild(item);
     }
