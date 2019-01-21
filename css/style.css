@@ -47,8 +47,9 @@ body {
   box-shadow: 0 0.5rem 1rem #111111ab; }
 
 .gradient__container {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+    flex-direction: column;*/
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -70,6 +71,13 @@ body {
     margin-bottom: 1rem; }
   .gradient__container .colorInp-label {
     padding: 0.8rem 0.5rem; }
+
+#settings {
+  font-size: 4rem;
+  color: #333;
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem; }
 
 .todo__container {
   width: 40rem;
