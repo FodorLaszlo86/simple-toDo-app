@@ -22,11 +22,12 @@ body {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden; }
 
 /* APP TITLE */
 .title {
-  margin: 15vh auto 5vh 46%;
+  margin: 15vh auto 5vh 50%;
   text-align: center;
   padding: .5rem;
   transform: translateX(-50%);
@@ -121,7 +122,7 @@ body {
 .todo__container {
   width: 40rem;
   background-color: #eee;
-  margin-left: 46%;
+  margin-left: 50%;
   transform: translateX(-50%);
   border-radius: .3rem;
   box-shadow: 0 0.5rem 1rem #111111ab; }
