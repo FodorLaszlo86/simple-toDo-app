@@ -11,6 +11,11 @@
     box-shadow: $shadow;
     opacity: 0.8;
 
+    &--display {
+        display: flex;
+        flex-direction: column;
+    }
+
     .gradient__header {
         font-weight: 300;
         text-align: center;

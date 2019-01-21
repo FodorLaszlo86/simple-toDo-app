@@ -58,6 +58,9 @@ body {
   background-color: #eee;
   box-shadow: 0 0.5rem 1rem #111111ab;
   opacity: 0.8; }
+  .gradient__container--display {
+    display: flex;
+    flex-direction: column; }
   .gradient__container .gradient__header {
     font-weight: 300;
     text-align: center;
@@ -77,7 +80,9 @@ body {
   color: #333;
   position: absolute;
   top: 2rem;
-  right: 2.5rem; }
+  right: 2.5rem;
+  cursor: pointer;
+  z-index: 10; }
 
 .todo__container {
   width: 40rem;

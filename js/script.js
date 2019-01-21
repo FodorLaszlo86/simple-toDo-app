@@ -4,6 +4,8 @@ const inputBtn = document.querySelector('.input__btn');
 const col1 = document.querySelector('#color1');
 const col2 = document.querySelector('#color2');
 const body = document.querySelector('body');
+const settingsBtn = document.querySelector('#settings');
+const settingsBar = document.querySelector('.gradient__container');
 
 
 /* ToDo App Controller */
@@ -65,6 +67,18 @@ userInput.addEventListener('keypress', addNewItemEnterPress);
 function setGradient() {
     body.style.backgroundImage = `linear-gradient(to right, ${ col1.value }, ${ col2.value })`;
 }
+
+
+/* Toggle Settings bar */
+
+function toggleSettings() {
+    settingsBar.classList.toggle('gradient__container--display');
+}
+
+settingsBtn.addEventListener('click', toggleSettings);
+
+
+
 
 col1.addEventListener('input', setGradient);
 
