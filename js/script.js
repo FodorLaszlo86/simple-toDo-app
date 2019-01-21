@@ -73,6 +73,8 @@ function setGradient() {
 
 function toggleSettings() {
     settingsBar.classList.toggle('gradient__container--display');
+    settingsBar.classList.add('animated', 'slideInRight');
+    console.log(settingsBar.classList);
 }
 
 settingsBtn.addEventListener('click', toggleSettings);
