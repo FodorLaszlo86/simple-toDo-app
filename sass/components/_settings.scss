@@ -1,9 +1,9 @@
 #settings {
     font-size: 4rem;
-    color: $color-gray;
+    color: $color-gray-medium;
     position: absolute;
     top: 2rem;
-    right: 2.5rem;
+    right: calc(8vw / 2 - 2.25rem);
     cursor: pointer;
     z-index: 10;
 }

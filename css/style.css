@@ -54,7 +54,7 @@ body {
   top: 0;
   right: 0;
   height: 100%;
-  width: 8%;
+  width: 8vw;
   background-color: #eee;
   box-shadow: 0 0.5rem 1rem #111111ab;
   opacity: 0.8; }
@@ -77,10 +77,10 @@ body {
 
 #settings {
   font-size: 4rem;
-  color: #333;
+  color: #777;
   position: absolute;
   top: 2rem;
-  right: 2.5rem;
+  right: calc(8vw / 2 - 2.25rem);
   cursor: pointer;
   z-index: 10; }
 
